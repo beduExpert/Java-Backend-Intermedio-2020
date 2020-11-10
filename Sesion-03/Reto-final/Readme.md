@@ -1,9 +1,0 @@
-# Proyecto
-
-# Objetivo
-
-# Requisitos
-
-# Desarrollo
-
-
