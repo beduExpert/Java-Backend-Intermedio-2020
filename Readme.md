@@ -1,13 +1,14 @@
 
-## Módulo: Nombre del Modulo
+## Módulo: Introducción a Java Backend
 
 ### Objetivo
+Adquirir los conocimientos necesarios para el desarrollo del motor de aplicaciones web usando el Framework de Spring 5 y su módulo **Spring Boot**, aprendiendo la forma de estructurar una aplicación para agregar funcionalidades de acceso a datos. 
 
 
 
 ### Organización Del Módulo
 
- - [Sesión 1: ]()
+ - [Sesión 1: Introducción a Spring 5 y Spring Boot 2](Sesion-01)
 
  - [Sesión 2: ]()
 
