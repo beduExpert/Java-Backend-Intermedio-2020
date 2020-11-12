@@ -10,13 +10,13 @@
 ## Organización de la clase
 
 - Creación de proyecto Gradle con Spring Initializr
- - [Ejemplo 01](Ejemplo 01)
- - [Reto 01](Reto 01)
+ - [Ejemplo 01](Ejemplo-01)
+ - [Reto 01](Reto-01)
  
 - Creación de proyecto Maven con Spring Initializr
- - [Ejemplo 02](Ejemplo 02)
- - [Reto 02](Reto 02)
+ - [Ejemplo 02](Ejemplo-02)
+ - [Reto 02](Reto-02)
 
 - Creación de proyecto Maven con IntelliJ Idea
- - [Ejemplo 03](Ejemplo 03)
- - [Reto 03](Reto 03)
+ - [Ejemplo 03](Ejemplo-03)
+ - [Reto 03](Reto-03)
