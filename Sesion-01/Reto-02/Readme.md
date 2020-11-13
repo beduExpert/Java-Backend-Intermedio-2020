@@ -1,4 +1,4 @@
-## Reto : Creación de Proyecto Maven con Spring Initilizr
+## Reto : Creación de Proyecto Maven con Spring Initializr
 
 ## Objetivo
 - Crear un nuevo proyecto Spring Boot, usando Spring Initializr, sin ayuda del instructor.
