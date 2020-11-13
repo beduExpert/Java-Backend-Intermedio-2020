@@ -1,7 +1,7 @@
-## Ejemplo : Creación de proyecto Maven con Spring Initilizr desde IntelliJ Idea
+## Ejemplo : Creación de proyecto Maven con Spring Initializr desde IntelliJ Idea
 
 ### Objetivo
-- Aprender la forma de crear un proyecto Maven usando Spring Initlizr desde IntelliJ Idea.
+- Aprender la forma de crear un proyecto Maven usando Spring Initializr desde IntelliJ Idea.
 - Compilar, empaquetar y ejecutar la aplicación o proyecto generados desde el IDE.
 - Ejecutar la aplicación.
 
