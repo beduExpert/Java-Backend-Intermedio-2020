@@ -11,11 +11,11 @@ En este primer Postwork crearás el proyecto *Maven* desde IntelliJ Idea que ser
 - Selecciona las siguientes opciones para tu proyecto:
     - Herramienta de construcción: **Maven**
     - Lenguaje de programación: **Java 11**
-    - Version de Spring Boot: la más actual que no sea un `SNAPSHOT` ni un `RC`.
+    - Versión de Spring Boot: la más actual que no sea un `SNAPSHOT` ni un `RC`.
 - Agrega `Spring Web` como dependencia de tu proyecto.
 - Genera el proyecto en tu IDE y ejecútalo para asegurarte de que todo está configurado correctamente.
 
-**-Nota:** También puedes generar tu proyecto desde el sitio de [Spring Initializr](https://start.spring.io/), descargarlo en tu computaora e importarlo en IntelliJ Idea desde el menú `File -> New -> Project from Existing Sources`:
+**-Nota:** También puedes generar tu proyecto desde el sitio de [Spring Initializr](https://start.spring.io/), descargarlo en tu computadora e importarlo en IntelliJ Idea desde el menú `File -> New -> Project from Existing Sources`:
 
 ![imagen](img/img_01.png)
 
