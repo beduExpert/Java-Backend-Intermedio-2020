@@ -1,4 +1,4 @@
-## Reto : Creación de Proyecto Maven con Spring Initializr desde IntelliJ Idea
+## Reto: Creación de Proyecto Maven con Spring Initializr desde IntelliJ Idea
 
 ## Objetivo
 - Crear un nuevo proyecto Spring Boot, usando Spring Initializr desde el IDE IntelliJ Idea, sin ayuda del instructor.
@@ -13,10 +13,10 @@
 Crear un proyecto de Spring Boot usando Spring Initializr con las siguientes características:
 - Herramienta de construcción: **Maven**
 - Lenguaje de programación: **Java 11**
-- Version de Spring Boot: la más actual que no sea un `SNAPSHOT` ni un `RC`.
+- Versión de Spring Boot: la más actual que no sea un `SNAPSHOT` ni un `RC`.
 
 <details>
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 
 1. Abre el IDE IntelliJ Idea. Crea un nuevo proyecto usando el menú `New -> Project`.
 
@@ -40,7 +40,7 @@ Crear un proyecto de Spring Boot usando Spring Initializr con las siguientes car
 
 ![imagen](img/img_04.png)
 
-5. En la última ventana dale un nombre y una ubicación al proyecto y presiona el botón Finish. Con esto se creará un nuevo proyecto que tiene la siguiente estructura:
+5. En la última ventana dale un nombre y una ubicación al proyecto y presiona el botón `Finish`. Con esto se creará un nuevo proyecto que tiene la siguiente estructura:
 
 ![imagen](img/img_05.png)
 
@@ -48,7 +48,7 @@ Crear un proyecto de Spring Boot usando Spring Initializr con las siguientes car
 
 7. El siguiente paso es compilar el código de la aplicación. Para hacerlo ve al panel llamado *Maven* que se encuentra del lado derecho del IDE.
 
-Para compilar el código de la aplicación y generar el archivo jar que permite la ejecución de esta haz doble click sobre el elemento *package* (con lo que se le indica a Maven que este es el último paso del ciclo de vida de construcción de la aplicación que debe ejecutar).
+Para compilar el código de la aplicación y generar el archivo jar que permite la ejecución de este, haz doble clic sobre el elemento *package* (con lo que se le indica a Maven que este es el último paso del ciclo de vida de construcción de la aplicación que debe ejecutar).
 
 ![imagen](img/img_08.png)
 
@@ -64,7 +64,7 @@ Para compilar el código de la aplicación y generar el archivo jar que permite 
 
 ![imagen](img/img_12.png)
 
-Esto indica que la aplicación se levantó correctamente en el puerto 8080. Como no hay contenido en la aplicación no hay mucho que mostrar, pero puedes comprobar que la aplicación está bien configurada, que todos los elementos necesario están instalados y configurados y que la aplicación se ejecuta de forma correcta. Escribe la siguiente ruta en tu navegador:
+Esto indica que la aplicación se levantó correctamente en el puerto 8080. Como no hay contenido en la aplicación no hay mucho que mostrar, pero puedes comprobar que la aplicación está bien configurada, que todos los elementos necesarios están instalados y configurados y que la aplicación se ejecuta de forma correcta. Escribe la siguiente ruta en tu navegador:
 
 http://localhost:8080
 
@@ -72,7 +72,7 @@ Una vez que el sitio cargue, debes ver una pantalla como la siguiente:
 
 ![imagen](img/img_13.png)
 
-11. Deten la aplicación presionando el botón del cuadro rojo en el panel de salida del IDE.
+11. Detén la aplicación presionando el botón del cuadro rojo en el panel de salida del IDE.
 
 ![imagen](img/img_14.png)
 
