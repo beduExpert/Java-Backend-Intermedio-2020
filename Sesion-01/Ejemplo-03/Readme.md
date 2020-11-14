@@ -1,4 +1,4 @@
-## Ejemplo : Creación de proyecto Maven con Spring Initializr desde IntelliJ Idea
+## Ejemplo: Creación de proyecto Maven con Spring Initializr desde IntelliJ Idea
 
 ### Objetivo
 - Aprender la forma de crear un proyecto Maven usando Spring Initializr desde IntelliJ Idea.
@@ -47,11 +47,11 @@ Para abrirlo solo haz clic sobre el nombre del panel, con esto debe desplegarse 
 
 ![imagen](img/img_07.png)
 
-7. Ahora, para compilar el código de la aplicación y generar el archivo jar que permite la ejecución de esta, existen dos formas de hacerlo. La primera es haciendo doble click sobre el elemento `package` (con lo que se le indica a Maven que este es el último paso del ciclo de vida de construcción de la aplicación que debe ejecutar).
+7. Ahora, para compilar el código de la aplicación y generar el archivo jar que permite la ejecución de esta, existen dos formas de hacerlo. La primera es haciendo doble clic sobre el elemento `package` (con lo que se le indica a Maven que este es el último paso del ciclo de vida de construcción de la aplicación que debe ejecutar).
 
 ![imagen](img/img_08.png)
 
-La otra forma de ejecutar este paso del ciclo de vida es seleccionándolo en el panel de Maven y haciendo clic en el botón de la fecha verde, el cual se llama `Run Maven Build`. Este iniciará la ejecución de los pasos del ciclo de vida hasta el paso selecionado (en este caso `package`).
+La otra forma de ejecutar este paso del ciclo de vida es seleccionándolo en el panel de Maven y haciendo clic en el botón de la fecha verde, el cual se llama `Run Maven Build`. Este iniciará la ejecución de los pasos del ciclo de vida hasta el paso seleccionado (en este caso `package`).
 
 ![imagen](img/img_09.png)
 
@@ -69,7 +69,7 @@ Con esto debemos ver una salida similar a la siguiente en el panel de salida del
 
 ![imagen](img/img_12.png)
 
-Esto indica que la aplicación se levantó correctamente en el puerto 8080. Como no hemos colocado ningún contenido en la aplicación no hay mucho que mostrar, pero podremos comprobar que la aplicación está bien configurada, que todos los elementos necesario están instalados y configurados y que nuestra aplicación se ejecuta de forma correcta:
+Esto indica que la aplicación se levantó correctamente en el puerto 8080. Como no hemos colocado ningún contenido en la aplicación no hay mucho que mostrar, pero podremos comprobar que la aplicación está bien configurada, que todos los elementos necesarios están instalados y configurados y que nuestra aplicación se ejecuta de forma correcta:
 
   http://localhost:8080
 
@@ -77,6 +77,6 @@ Una vez que el sitio cargue, debes ver una pantalla como la siguiente:
 
 ![imagen](img/img_13.png)
 
-10. Deten la aplicación presionando el botón del cuadro rojo en el panel de salida del IDE.
+10. Detén la aplicación presionando el botón del cuadro rojo en el panel de salida del IDE.
 
 ![imagen](img/img_14.png)
