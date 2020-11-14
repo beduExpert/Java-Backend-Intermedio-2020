@@ -1,4 +1,4 @@
-## Reto : Creación de Proyecto Gradle con Spring Initilizr
+## Reto: Creación de Proyecto Gradle con Spring Initializr
 
 ## Objetivo
 - Crear un nuevo proyecto Spring Boot, usando Spring Initializr, sin ayuda del instructor.
@@ -12,10 +12,10 @@
 Crear un proyecto de Spring Boot usando Spring Initializr con las siguientes características:
 - Herramienta de construcción: **Gradle**
 - Lenguaje de programación: **Java 11**
-- Version de Spring Boot: la más actual que no sea un `SNAPSHOT` ni un `RC`.
+- Versión de Spring Boot: la más actual que no sea un `SNAPSHOT` ni un `RC`.
 
 <details>
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 
 1. Entra al sitio de [Spring Initializr](https://start.spring.io/). Comienza llenando la información de la sección del lado izquierdo.
 - **Gradle** Proyect
@@ -31,7 +31,7 @@ Crear un proyecto de Spring Boot usando Spring Initializr con las siguientes car
 
 ![imagen](img/img_02.png)
 
-3. Selecciona la dependecia `Spring Web` y con eso debes verla en la lista de las dependencias del proyecto:
+3. Selecciona la dependencia `Spring Web` y con eso debes verla en la lista de las dependencias del proyecto:
 
 ![imagen](img/img_03.png)
 
@@ -41,7 +41,7 @@ Crear un proyecto de Spring Boot usando Spring Initializr con las siguientes car
 
 ![imagen](img/img_04.png)
 
-6. Abre una terminal o línea de comandos en el directrio que acabas de descomprimir y ejecuta los siguientes comandos:
+6. Abre una terminal o línea de comandos en el directorio que acabas de descomprimir y ejecuta los siguientes comandos:
 
        gradlew clean build
 
@@ -57,7 +57,7 @@ o navega al directorio **build\libs**, abre una terminal en este directorio y ej
 
     java -jar backend.sesion1-0.0.1-SNAPSHOT.jar
     
-Esto indica que la aplicación se levantó correctamente en el puerto 8080. Como no hemos colocado ningún contenido en la aplicación no hay mucho que mostrar, pero podremos comprobar que la aplicación está bien configurada, que todos los elementos necesario están instalados y configurados y que nuestra aplicación se ejecuta de forma correcta:
+Esto indica que la aplicación se levantó correctamente en el puerto 8080. Como no hemos colocado ningún contenido en la aplicación no hay mucho que mostrar, pero podremos comprobar que la aplicación está bien configurada, que todos los elementos necesarios están instalados y configurados y que nuestra aplicación se ejecuta de forma correcta:
 
   http://localhost:8080
 
@@ -65,7 +65,7 @@ Una vez que el sitio cargue, debes ver una pantalla como la siguiente:
 
 ![imagen](img/img_06.png)
 
-8. Deten la aplicación presionando Ctrl + C en la terminal en donde levantaste la aplicación.
+8. Detén la aplicación presionando Ctrl + C en la terminal en donde levantaste la aplicación.
   	
 </details> 
 
