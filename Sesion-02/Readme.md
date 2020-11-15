@@ -10,16 +10,16 @@
 ## Organización de la clase
 
 - Creación de controladores de lectura con Spring MVC
-        - [Ejemplo 1](Ejemplo-01)
-        - [Reto 1](Reto-01)
+    - [Ejemplo 1](Ejemplo-01)
+    - [Reto 1](Reto-01)
 
 - Cración y actualización de información
-        - [Ejemplo 2](Ejemplo-02)
-        - [Reto 2](Reto-02)
+    - [Ejemplo 2](Ejemplo-02)
+    - [Reto 2](Reto-02)
         
 - Borrado de información
-        - [Ejemplo 3](Ejemplo-03)
-        - [Reto 3](Reto-03)
+    - [Ejemplo 3](Ejemplo-03)
+    - [Reto 3](Reto-03)
  
 
 
