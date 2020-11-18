@@ -1,4 +1,4 @@
-## Ejemplo: Actualización de información con métodos POST y PUT 
+## Ejemplo: Uso del método POST
 
 ### Objetivo
 - Aprender la forma en la que Spring MVC permite recibir objetos complejos (objetos con múltiples atributos de varios tipos)
