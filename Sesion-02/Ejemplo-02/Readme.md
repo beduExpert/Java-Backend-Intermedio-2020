@@ -86,7 +86,7 @@ public Saludo saluda(Saludo saludo){
 
 ```java
     @PostMapping("/saludo")
-    public Saludo saluda(@RequestBody Saludo saludo){
+    public Saludo saluda(Saludo saludo){
         return saludo;
     }
 ```
