@@ -2,7 +2,7 @@
 
 ### Objetivo
 - Aprender la forma de crear controladores de Spring usando su módulo web (Spring MVC) y recibir un parámetro.
-- Crear un primer servicio REST que regrese un recurso estático dinámico.
+- Crear un servicio REST que regrese un recurso dinámico.
 - Consumir el servicio usando un navegador Web y con Postman.
 
 ### Requisitos
