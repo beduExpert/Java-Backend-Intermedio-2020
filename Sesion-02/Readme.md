@@ -4,7 +4,7 @@
 ## Objetivos
 - Aprender qué son los servicios web REST y sus características.
 - Conocer el modelo de madurez de Richardson para conocer el grado de apego de nuestros servicios REST. En este curso nos apegaremos al nivel 2.
-- Aplicar los métodos HTTP GET, POST, PUT y DELETE.
+- Aplicar los métodos HTTP **GET**, **POST**, **PUT** y **DELETE**.
 - Crear nnuestros primeros servicios REST usando Spring MVC. 
 
 ## Organización de la clase
@@ -18,7 +18,6 @@
     - [Reto 2](Reto-02)
         
 - Borrado de información
-    - [Ejemplo 3](Ejemplo-03)
     - [Reto 3](Reto-03)
  
 
