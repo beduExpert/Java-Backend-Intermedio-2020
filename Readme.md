@@ -12,7 +12,7 @@ Adquirir los conocimientos necesarios para el desarrollo del motor de aplicacion
 
  - [Sesión 2: Servicios web RESTFul con Spring MVC](Sesion-02)
 
- - [Sesión 3: ]()
+ - [Sesión 3: Spring MVC Validation](Sesion-03)
 
  - [Sesión 4: ]()
 
