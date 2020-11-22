@@ -79,7 +79,7 @@ public class VisitaController {
     }
 ```
 
-Para la siguiente parte crearás un manejador global de errores, para eso crearemos una nueva clase que representará los mensajes de respuesta que regresaremos al usuario de nuestros servicios, también haremos uso del patrón de diseño `Builder` para crear las instancias de esa clase. Además crearemos un manejador global para los errores de validación.
+Para la siguiente parte crearás un manejador global de errores, para eso crearemos una nueva clase que representará los mensajes de respuesta que regresaremos al usuario de nuestros servicios, también haremos uso del patrón de diseño `Builder` para crear las instancias de esa clase. Además, crearemos un manejador global para los errores de validación.
 
 12. Dentro del paquete `model` crea una nueva clase llamada `RespuestaError` con el siguiente contenido, no olvides también agregar los métodos *getter*s y *setter*s de los atributos. El método `builder` permitirá crear las instancias de esta clase y a continuación crearás la clase que implementa este patrón de diseño.
 
@@ -94,7 +94,7 @@ Para la siguiente parte crearás un manejador global de errores, para eso creare
     }
 ```
 
-13. Dentro del paquete `model` crea un nuevo subpaqute `builders` y dentro de este una clase `RespuestaErrorBuilder`. 
+13. Dentro del paquete `model` crea un nuevo subpaquete `builders` y dentro de este una clase `RespuestaErrorBuilder`. 
 
 ```java
 public class RespuestaErrorBuilder {
@@ -152,7 +152,7 @@ public class RespuestaErrorBuilder {
 }
 ```
 
-14. En el paquete `controllers` crea un nuevo supaquete llamado `handlers` y adentro de este una clase `ManejadorGlobalExcepciones`. Decora esa clase con la anotación `@RestControllerAdvice`.
+14. En el paquete `controllers` crea un nuevo subpaquete llamado `handlers` y adentro de este una clase `ManejadorGlobalExcepciones`. Decora esa clase con la anotación `@RestControllerAdvice`.
 
 ```java
 @RestControllerAdvice
@@ -174,7 +174,7 @@ public class ManejadorGlobalExcepciones {
     }
 ```
 
-16. Envía desde postman una petición usando el siguiente objeto JSON:
+16. Envía desde Postman una petición usando el siguiente objeto JSON:
 
 ```json
 {
@@ -190,7 +190,7 @@ En el panel de respuestas de Postman debes ver una respuesta como la siguiente:
 
 ![imagen](img/img_01.png)
 
-17. Envía una petición con el siguiente objeto JSON. En esta ocación la petición debe procesarse de forma correcta:
+17. Envía una petición con el siguiente objeto JSON. En esta ocasión la petición debe procesarse de forma correcta:
 ```json
 {
     "clienteId": 10,
