@@ -24,8 +24,8 @@
     - El `nombre` no puede ser un valor nulo o un espacio en blanco.
     - El `precio` debe hacer de al menos 1.00.
     - La `fechaCreacion` no puede ocurrir después del día de hoy (debe ser del pasado o el presente pero no en el futuro).
-    - El `numeroRegistro` debe ser un número con el siguiente formato: `###-###-####"`; es decir: tres números, guión medio, tres números, guión medio, cuatro números.
-- Crea una nueva clase que represente un servicio REST, unando la anotación `@RestController`.
+    - El `numeroRegistro` debe ser un número con el siguiente formato: `###-###-####"`; es decir: tres números, guion medio, tres números, guion medio, cuatro números.
+- Crea una nueva clase que represente un servicio REST, usando la anotación `@RestController`.
 - Crea un nuevo manejador de peticiones de tipo **POST** que reciba como un parámetro de tipo "`Producto`" y regrese un código de respuesta **201**.
 - Indica al controlador que debe validar el objeto de tipo `Producto` que recibe como parámetro.
 - Envía una petición de prueba desde la herramienta Postman.
