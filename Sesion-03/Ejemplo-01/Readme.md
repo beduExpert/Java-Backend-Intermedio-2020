@@ -100,7 +100,7 @@ Como puedes ver, a pesar de que estamos enviando información incompleta (no hem
     private String direccion;
 ```
 
-10. En la clase `ClienteController` agrega la siguiente anotación, con la cual se le indica a Spring que debe aplicar la validaciones indicadas antes de darle el control al manejador. 
+10. En la clase `ClienteController` agrega la siguiente anotación, con la cual se le indica a Spring que debe aplicar las validaciones indicadas antes de darle el control al manejador. 
 
 ```java
 @Valid
