@@ -99,7 +99,7 @@ public class VisitaController {
 }
 ```
 
-En Postman debes obtener un error con estatu **500**: 
+En Postman debes obtener un error con estatus **500**: 
 
 ![imagen](img/img_01.png)
 
@@ -117,7 +117,7 @@ y en la consola de IntelliJ el siguiente `NullPointerException` (que es lo que e
     }
 ```
 
-12. Vuelve a lanzar la petición desde Postman, en esta ocación debes obtener una respuesta con el texto que regresamos desde el método en el servidor:
+12. Vuelve a lanzar la petición desde Postman, en esta ocasión debes obtener una respuesta con el texto que regresamos desde el método en el servidor:
 
 ![imagen](img/img_03.png)
 
