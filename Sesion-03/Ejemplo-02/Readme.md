@@ -94,7 +94,7 @@ En el panel de respuestas debes ver un mensaje como el siguiente:
 
 ![imagen](img/img_01.png)
 
-Como puedes ver, dice que la petición no es correcta (que el contenido de la misma no cumple ccon algunas condiciones) pero no dice qué es lo que está mal. Arreglaremos esto en un momento. 
+Como puedes ver, dice que la petición no es correcta (que el contenido de la misma no cumple con algunas condiciones) pero no dice qué es lo que está mal. Arreglaremos esto en un momento. 
 
 12. Dentro de la clase `VisitaController` agrega el siguiente método:
 
