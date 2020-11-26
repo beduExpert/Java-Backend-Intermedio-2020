@@ -1,4 +1,4 @@
-## Ejemplo 4: Manejo de errores con ResponseStatusException
+## Ejemplo 1: Manejo de errores con ResponseStatusException
 
 ### Objetivo
 - Regresar los estatus de respuesta más adecuados cuando ocurre un error al procesar una petición.
