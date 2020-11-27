@@ -1,34 +1,26 @@
-## Reto 2: Manejo de errores extendiendo ResponseEntityExceptionHandler 
+## Ejemplo 2: Manejo de errores extendiendo ResponseEntityExceptionHandler 
+
 
 ### Objetivo
+### Objetivo
+
 - Manejar los errores comunes ocurridos dentro de una aplicación web, extendiendo de la clase base `ResponseEntityExceptionHandler` de Spring.
 - Proporcionar una estructura cnsistente del manejo de errores.
 
+
+#### Requisitos
 #### Requisitos
 - Tener instalado el IDE IntelliJ Idea Community Edition.
 - Tener instalada la última versión del JDK 11 (de Oracle u OpenJDK).
 - Tener instalada la herramienta Postman.
 
 
+
+
 #### Desarrollo
-- Crea un nuevo proyecto Spring Boot en IntelliJ Idea como lo hiciste en la primera sesión. 
-- Crea una nueva clase que represente un recurso de tipo `Producto` con los siguientes atributos: 
-    - long id;
-    - String nombre;
-    - float precio
-    - String categoria;
-    - String numeroRegistro;
-    - private LocalDate fechaCreacion;
-- Crea una nueva clase que represente un servicio REST, usando la anotación `@RestController`.
-- Crea un nuevo manejador de peticiones de tipo **POST** que reciba como un parámetro de tipo "`Producto`" y regrese un código de respuesta **201**.
-- Agrega una clase `RespuestaError` como la del Ejemplo anterior.
-- Agrega un manejador global de errores con una clase decorada con la anotación `@RestControllerAdvice` que extienda la clase `ResponseEntityExceptionHandler` y sobreescribe el método `handleHttpRequestMethodNotSupported` el cual se invoca cuando se hace una petición a un método HTTP que no existe en el servicio; en el ejemplo anterior estamos agregando un método **POST** pero tú deberás hacer una petición a un método **GET** (que no existe).
-- Envía una petición de prueba desde la herramienta Postman, recuerda que esta petición debe ser de tipo **POST**.
+#### Desarrollo
 
 
-<details>
-	<summary>Solución</summary>
-   
 1. Crea un proyecto Maven usando Spring Initializr desde el IDE IntelliJ Idea.
 
 2. En la ventana que se abre selecciona las siguientes opciones:
@@ -38,44 +30,59 @@
 - Forma de empaquetar la aplicación: **jar**.
 - Versión de Java: **11**.
 
-3. En la siguiente ventana elige **Spring Web** como dependencia del proyecto.
+3. En la siguiente ventana elige **Spring Web** y **Validation** como dependencia del proyecto.
 
 4. Dale un nombre y una ubicación al proyecto y presiona el botón Finish.
 
-5. En el proyecto que se acaba de crear debes tener el siguiente paquete `org.bedu.java.backend.sesion4.reto2`. Dentro crea dos subpaquetes: `model` y `controllers`.
+5. En el proyecto que se acaba de crear debes tener el siguiente paquete `org.bedu.java.backend.sesion4.ejemplo2`. Dentro crea dos subpaquetes: `model` y `controllers`.
 
-6. Dentro del paquete `model` crea una nueva clase llamada "`Producto`" con los siguientes atributos:
+6. Dentro del paquete `model` crea una nueva clase llamada "`Cliente`" con los siguientes atributos y validaciones:
 
 ```java
+    @PositiveOrZero(message = "El identificador no puede ser un número negativo")
     private long id;
+    @NotEmpty(message = "El nombre del cliente no puede estar vacío")
+    @Size(min = 5, max = 30, message = "El nombre del cliente debe tener al menos 5 letras y ser menor a 30")
     private String nombre;
-    private float precio;
-    private String categoria;
-    private String numeroRegistro;
-    private LocalDate fechaCreacion;
+    @Email
+    private String correoContacto;
+    @Min(value = 10, message = "Los clientes con menos de 10 empleados no son válidos")
+    @Max(value = 10000, message = "Los clientes con más de 10000 empleados no son válidos")
+    private String numeroEmpleados;
+    @NotBlank(message = "Se debe proporcionar una dirección")
+    private String direccion;
 ```
 
 Agrega también los *getter*s y *setter*s de cada atributo.
 
-7. En el paquete `controllers` agrega una clase llamada `ProductoController` y decórala con la anotación `@RestController`, de la siguiente forma:
+7. En el paquete `controllers` agrega una clase llamada `ClienteController` y decórala con la anotación `@RestController`, de la siguiente forma:
 
 ```java
 @RestController
-@RequestMapping("/producto")
-public class ProductoController {
-
+@RequestMapping("/cliente")
+public class ClienteController {
 }
 ```
 
-8. Agrega un nuevo manejador de peticiones **POST** el cual reciba un identificador como parámetro de petición, de la siguiente forma:
+8. Agrega un nuevo manejador de peticiones **POST** el cual reciba un identificador como parámetro de petición en la URL; tambén, indica que el parámetro que recibe se debe de validar, de la siguiente forma:
 
 ```java
     @PostMapping
-    public ResponseEntity<Void> agregaProducto(@RequestBody Producto producto){
-        return ResponseEntity.created(URI.create("")).build();
+    public ResponseEntity<Void> creaCliente(@Valid @RequestBody Cliente cliente){
+      return ResponseEntity.created(URI.create("")).build();
     }
 ```
-9. Dentro del paquete `controllers` crea un nuevo paquete llamado `handlers` y dentro de este un clase llamada `ManejadorGlobalExcepciones` que extienda a la clase `ResponseEntityExceptionHandler`. Decora esta clase con la anotación `@ControllerAdvice`:
+
+9. Dentro del paquete `model` crea un nuevo paquete `builders`y dentro de este una clase llamada `RespuestaError`, con el siguiente contenido:
+```java
+    private final LocalDateTime timestamp = LocalDateTime.now();
+    private int estatus;
+    private Map<String, String> errores;
+    private String ruta;
+```
+Agrega también los *getter*s y los *setter*s.
+
+10. Dentro del paquete `controllers` crea un nuevo paquete llamado `handlers` y dentro de este un clase llamada `ManejadorGlobalExcepciones` que extienda a la clase `ResponseEntityExceptionHandler`. Decora esta clase con la anotación `@ControllerAdvice`:
 
 ```java
     @RestControllerAdvice
@@ -84,34 +91,57 @@ public class ProductoController {
     }
 ```
 
-10. Dentro de esta clase sobreescribe el método `handleHttpRequestMethodNotSupported` con el siguiente contenido:
+11. Dentro de esta clase sobreescribe el método `handleMethodArgumentNotValid` con el siguiente contenido:
 
 ```java
     @Override
-    protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
-
+    protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
         Map<String, String> errors = new TreeMap<>();
-
-        StringBuilder builder = new StringBuilder();
-        builder.append("El método ");
-        builder.append(ex.getMethod());
-        builder.append(" no está soportado para esta petición. Los métodos soportados son ");
-
-        ex.getSupportedHttpMethods().forEach(t -> builder.append(t + " "));
-
-        errors.put("Error", builder.toString());
+        for (FieldError error : ex.getBindingResult().getFieldErrors()) {
+            errors.put(error.getField(), error.getDefaultMessage());
+        }
+        for (ObjectError error : ex.getBindingResult().getGlobalErrors()) {
+            errors.put(error.getObjectName(), error.getDefaultMessage());
+        }
         RespuestaError respuestaError = new RespuestaError();
         respuestaError.setErrores(errors);
         respuestaError.setRuta(request.getDescription(false).substring(4));
-
-        return new ResponseEntity<Object>(respuestaError, new HttpHeaders(), HttpStatus.METHOD_NOT_ALLOWED);
+        return handleExceptionInternal(
+                ex, respuestaError, headers, HttpStatus.BAD_REQUEST, request);
     }
 ```
 
-11. Ejecuta la aplicación y, desde Postman, envía una petición **GET**.
+Este método se llamará cada vez que ocurra un error en una validación de datos en un objeto validado por Spring.
+
+
+12. Ejecuta la aplicación y, desde Postman, envía una petición **POST** con el siguiente contenido:
+```json
+{
+    "clienteId": 0,
+    "fechaProgramada": "2010-12-11T09:00:00",
+    "direccion": "Oficina del cliente ubicada en la ciudad de Monterrey",
+    "proposito": "Mostrarle unos productos",
+    "vendedor": "Ara"
+}
+```
 
 Debes obtener un resultado como el siguiente:
 
 ![imagen](img/img_01.png)
 
-</details>
+13. Ahora, envía una nueva petición con el siguiente contenido:
+```json
+{
+    "clienteId": 10,
+    "nombre": "Cliente Principal",
+    "fechaProgramada": "2020-12-11T09:00:00",
+    "direccion": "Oficina del cliente ubicada en la ciudad de Monterrey",
+    "proposito": "Mostrarle unos productos",
+    "vendedor": "Araceli García"
+}
+```
+
+Debes obtener un resutado como el siguiente:
+
+
+![imagen](img/img_02.png)
