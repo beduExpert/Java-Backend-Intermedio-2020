@@ -20,4 +20,3 @@
 
 - Negociación de contenido para obtener una respuesta en XML o JSON
   - [Ejemplo 3](Ejemplo-03)
-  - [Reto 3](Reto-03)
