@@ -7,9 +7,6 @@
 - Aprender a personalizar la información que se regresa a quien consume el servicio cuando ocurre un error."
 
 ## Organización de la clase
-
-- Trabajo con estatus de error en HTTP
-
 - Trabajo con códigos de error HTTP
   - [Ejemplo 1](Ejemplo-01)
   - [Reto 1](Reto-01)
