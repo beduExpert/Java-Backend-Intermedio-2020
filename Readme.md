@@ -14,9 +14,9 @@ Adquirir los conocimientos necesarios para el desarrollo del motor de aplicacion
 
  - [Sesión 3: Spring MVC Validation](Sesion-03)
 
- - [Sesión 4: ]()
+ - [Sesión 4: Manejo de errores y negociación de contenido](Sesion-04)
 
- - [Sesión 5: ]()
+ - [Sesión 5: Project Lombok y MapStruct](Sesion-05)
 
  - [Sesión 6: ]()
 
