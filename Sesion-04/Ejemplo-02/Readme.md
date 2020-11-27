@@ -2,24 +2,17 @@
 
 
 ### Objetivo
-### Objetivo
-
 - Manejar los errores comunes ocurridos dentro de una aplicación web, extendiendo de la clase base `ResponseEntityExceptionHandler` de Spring.
 - Proporcionar una estructura cnsistente del manejo de errores.
 
 
-#### Requisitos
 #### Requisitos
 - Tener instalado el IDE IntelliJ Idea Community Edition.
 - Tener instalada la última versión del JDK 11 (de Oracle u OpenJDK).
 - Tener instalada la herramienta Postman.
 
 
-
-
 #### Desarrollo
-#### Desarrollo
-
 
 1. Crea un proyecto Maven usando Spring Initializr desde el IDE IntelliJ Idea.
 
