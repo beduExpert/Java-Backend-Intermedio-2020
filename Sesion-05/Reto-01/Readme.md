@@ -17,7 +17,7 @@
     - private long id;
     - private String nombre;
     - private String correoContacto;
-    - private String numeroEmpleados;
+    - private int numeroEmpleados;
     - private String direccion;
 - Agrega las anotaciones necesarias para generar los métodos *getter* y *setter* de cada uno de los atributos anteriores.
 - Excluye los atributos `direccion` y `numeroEmpleados` de los métodos `toString`, `equals` y `hashCode`.
@@ -40,7 +40,7 @@
         </dependency>
     </dependencies>
 ```
-3. Crea un nuevo paquete llamado `org.bedu.java.backend.sesion5.ejemplo1` y adentro crea una clase llamada `Principal` que tenga un método `main` de la siguiente forma:
+3. Crea un nuevo paquete llamado `org.bedu.java.backend.sesion5.reto1` y adentro crea una clase llamada `Principal` que tenga un método `main` de la siguiente forma:
 ```java
 public class Principal {
     public static void main(String[] args) {
@@ -49,71 +49,56 @@ public class Principal {
 }
 ```
 
-4. Crea un subpaquete llamado `model` y adentro de este una clase llamada `Venta`; la estructura de la aplicacion hasta ahora debe verse así:
-
-![imagen](img/img_01.png)
-
-5. En la clase `Visita` coloca los siguientes atributos, en donde dos de los atributos estan marcados como `final`:
+4. Crea un subpaquete llamado `model` y adentro de este una clase llamada `Cliente` y coloca los siguientes atributos:
 ```java
     private long id;
-    private final LocalDateTime fechaProgramada;
+    private String nombre;
+    private String correoContacto;
+    private int numeroEmpleados;
     private String direccion;
-    private String proposito;
-    private final String vendedor;
 ```
 
-6. Decora la clase `Visita` con la anotación `@Data`, la cual le dice a **Lombok** que debe generar una serie de métodos, entre los que se encuentran:
-- *getter*s de todos los atributos
-- *setter*s de todos los atributos que no sean `final`
-- `equals`, `hashcode` y `toString`
-- Constructor con todos los atributos final
-
+5. Decora la clase `Cliente` con la anotación `@Data`, la cual le dice a **Lombok** que debe generar una serie de métodos, entre los que se encuentran:
 ```java
 @Data
-public class Visita {
+public class Cliente {
     private long id;
-    private final LocalDateTime fechaProgramada;
+    private String nombre;
+    private String correoContacto;
+    private int numeroEmpleados;
     private String direccion;
-    private String proposito;
-    private final String vendedor;
 }
 ```
 
-7. Decora la clase con la anotación `@Builder`, la cual indica a Lombok que debe implementar el patrón **builder** en esta clase, así que automáticamente agregará todos los elementos necesarios, incluyendo un método `build`, que será el que usaremos para obtener una instancia del objeto `VistaBuilder`, el cual también generado automáticamente por Lombok.
+6. Decora los atributos `numeroEmpleados` y `direccion` con las anotaciones `@ToString.Exclude` y `@EqualsAndHashCode.Exclude`, la cual indica a Lombok que no debe incluir los atributos marcados en los métodos `toString`, `equals` y `hashCode`.
 
 ```java
-@Data
-@Builder
-public class Visita {
-    private long id;
-    private final LocalDateTime fechaProgramada;
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    private int numeroEmpleados;
+
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private String direccion;
-    private String proposito;
-    private final String vendedor;
-}
 ```
 
-8. Revisa el panel de estructura de la clase en IntelliJ en donde se muestran los metodos generádos por IntelliJ:
-
-![imagen](img/img_03.png)
-
-9. En el método `main` crea una nueva inastancia de `Vista`, usando su builder, e imprime sus valores en la consola:
+7. En el método `main` crea una nueva inastancia de `Cliente` e imprime sus valores en la consola:
 ```java
+public class Principal {
     public static void main(String[] args) {
-        Visita visita = Visita.builder().proposito("Presentar los nuevos productos")
-                .direccion("Oficina del cliente")
-                .fechaProgramada(LocalDateTime.now().plusDays(3))
-                .vendedor("Juan Manuel")
-        .build();
+        Cliente cliente = new Cliente();
+        cliente.setDireccion("Dirección del cliente");
+        cliente.setCorreoContacto("contacto@cliente.com");
+        cliente.setNombre("Cliente importante");
+        cliente.setNumeroEmpleados(100);
 
-        System.out.printf("Propósito: %s%n", visita.getProposito());
-        System.out.printf("Vendedor: %s%n", visita.getVendedor());
-        System.out.printf("Dirección: %s%n", visita.getDireccion());
+        System.out.printf("Datos del cliente %s", cliente);
     }
+}
 ```
 
 10. Ejecuta la aplicación, debes obtener un resultado como el siguiente:
 
-![imagen](img/img_04.png)
+![imagen](img/img_01.png)
 
 </details>
