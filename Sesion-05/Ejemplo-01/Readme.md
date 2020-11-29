@@ -91,9 +91,7 @@ public class Visita {
                 .vendedor("Juan Manuel")
         .build();
 
-        System.out.printf("Propósito: %s%n", visita.getProposito());
-        System.out.printf("Vendedor: %s%n", visita.getVendedor());
-        System.out.printf("Dirección: %s%n", visita.getDireccion());
+        System.out.printf("Datos de la visita: %s%n", visita);
     }
 ```
 
