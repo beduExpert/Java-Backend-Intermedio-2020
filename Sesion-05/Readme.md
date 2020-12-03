@@ -16,7 +16,6 @@
 
 - Uso de Lombok y MapStruct con Spring Boot
   - [Ejemplo 3](Ejemplo-03)
-  - [Reto 3](Reto-03)
  
 
 
