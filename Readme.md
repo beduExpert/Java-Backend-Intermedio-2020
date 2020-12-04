@@ -18,7 +18,7 @@ Adquirir los conocimientos necesarios para el desarrollo del motor de aplicacion
 
  - [Sesión 5: Project Lombok y MapStruct](Sesion-05)
 
- - [Sesión 6: ]()
+ - [Sesión 6: Spring Data JPA](Sesion-06)
 
  - [Sesión 7: ]()
 
