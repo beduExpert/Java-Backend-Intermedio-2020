@@ -125,7 +125,7 @@ public class ClienteController {
 
 16. En el directorio resources busca o crea el archivo `application.properties` 
 
-![imagen](img/img_01.png)
+![imagen](img/img_02.png)
 
 Coloca el siguiente contenido en el archivo (los valores entre los signos `<` y `>` reemplazalos con tus propios valores):
 ```
