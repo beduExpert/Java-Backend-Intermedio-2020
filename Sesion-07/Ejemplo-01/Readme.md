@@ -88,3 +88,64 @@ public class CalculadoraService {
 
 ![imagen](img/img_01.png)
 
+12. Decora la nueva clase con la anotación `@ExtendWith(MockitoExtension.class)`, la cual indica que usarás las funcionalidades de Mockito para la prueba. Como no hay una implementación de la interface `CalculadoraDao` (aunque `CalculadoraService` la necesita), será necesario crear un objeto mock para poder completar la prueba unitaria. 
+
+13. Agrega una instancia de tipo `CalculadoraDao` y decórala con la anotación `@Mock`:
+
+```java
+    @Mock
+    CalculadoraDao calculadoraDao;
+```
+14. Agrega una instancia de tipo `CalculadoraService`, que es la clase que probaremos, y decórala con la anotación `@InjectMocks` para indicar que los mocks creados se deben inyectar en esta clase.
+
+```java
+    @InjectMocks
+    private CalculadoraService calculadora;
+```
+
+15. Agrega un método decorado con `@BeforeEach`, el cual se ejecuta antes de cada método de prueba. Dentro de este configura la respuesta que regresara el mock de tipo `CalculadoraDao` cuando se haga una llamada al método `findValorConstante`. En este caso la respuesta será el valor **3**; eso quiere decir que a todas las operaciones realizads se les sumará el valor 3.
+
+```java
+    @BeforeEach
+    void setUp(){
+        given(calculadoraDao.findValorConstante()).willReturn(3);
+    }
+```
+
+16. Crea un método llamado `sumaTest` para verificar la suma. Usa el método `assertEquals` de JUnit para asegurar que los valores regresados son correctos. Los métodos de prueba deben decorarse siempre con la anotación `@Test`:
+```java
+    @Test
+    @DisplayName("Prueba suma")
+    void sumaTest() {
+        int esperado = 8;
+
+        assertEquals(esperado, calculadora.suma(3, 2));
+    }
+```
+
+17. Haz lo mismo para probar la resta y la multiplicación:
+```java
+    @Test
+    @DisplayName("Prueba resta")
+    void restaTest() {
+        int esperado = 4;
+
+        assertEquals(esperado, calculadora.resta(3, 2));
+    }
+
+    @Test
+    @DisplayName("Prueba multiplicación")
+    void multiplicaTest() {
+        int esperado = 9;
+
+        assertEquals(esperado, calculadora.multiplica(3, 2));
+    }
+```
+
+18. Ejecuta la prueba haciendo clic derecho sobre el editor de código y seleccionando la opción `Run CalculadoraServiceTest` o haciendo clic sobre las dos flechas verdes que aparecen junto al nombre de la clase:
+
+![imagen](img/img_02.png)
+
+19. Debes ver el siguiente resultado en la consola de IntelliJ:
+
+![imagen](img/img_03.png)
