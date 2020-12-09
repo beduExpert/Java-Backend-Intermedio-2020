@@ -164,4 +164,4 @@ class ClienteControllerTest {
 
 17. Debes ver el siguiente resultado en la consola de IntelliJ:
 
-![imagen](img/img_03.png)
+![imagen](img/img_01.png)
