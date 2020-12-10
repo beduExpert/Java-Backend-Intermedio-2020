@@ -24,7 +24,7 @@
 
 4. Dale un nombre y una ubicación al proyecto y presiona el botón *Finish*.
 
-5. En el proyecto que se acaba de crear debes tener el siguiente paquete `org.bedu.java.backend.sesion7.ejemplo2`. Dentro crea los subpaquetes: `controllers`, `model`, `persistence` y `services`.
+5. En el proyecto que se acaba de crear debes tener el siguiente paquete `org.bedu.java.backend.sesion7.ejemplo3`. Dentro crea los subpaquetes: `controllers`, `model`, `persistence` y `services`.
 
 6. Dentro del paquete `model` crea una clase `Cliente` con los siguientes atributos, y las anotaciones `@Data` y `@Builder`:
 ```java
