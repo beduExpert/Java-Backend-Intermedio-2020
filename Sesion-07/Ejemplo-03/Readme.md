@@ -1,4 +1,4 @@
-## Ejemplo 2: Pruebas integrales con TestRestTemplate
+## Ejemplo 3: Pruebas integrales con TestRestTemplate
 
 ### Objetivo
 
