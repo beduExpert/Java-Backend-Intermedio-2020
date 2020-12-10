@@ -20,6 +20,6 @@ Adquirir los conocimientos necesarios para el desarrollo del motor de aplicacion
 
  - [Sesión 6: Spring Data JPA](Sesion-06)
 
- - [Sesión 7: ]()
+ - [Sesión 6: Pruebas unitarias e integrales](Sesion-07)
 
  - [Sesión 8: ]()
