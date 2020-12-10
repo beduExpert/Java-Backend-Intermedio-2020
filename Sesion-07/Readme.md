@@ -16,6 +16,4 @@
   - [Reto 2](Reto-02)
 
 -  Pruebas integrales con TestRestTemplate
-  - [Ejemplo 3](Ejemplo-03)
- 
-
+    - [Ejemplo 3](Ejemplo-03)
