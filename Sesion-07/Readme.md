@@ -2,18 +2,19 @@
 # Sesión 7: Pruebas unitarias con Spring Boot y Junit 5
 
 ## Objetivos
-- Tener un entendimiento básico de qué es una prueba unitaria
-- Aplicar pruebas unitarias en Spring Boot usando los objetos proporcionados por Spring Test
+- Aprender a generar documentación de servicios, basada en las pruebas unitarias de una aplicación 
+- Aprender la forma de personalizar la documentación generada con RestDoc
+- Distribuir la documentación de los servicios para ser consumida por otro desarrollador.
 
 ## Organización de la clase
 
-- Pruebas unitarias con JUnit 5 y Mockito
+- Configuración de Spring Mock MVC para usar RestDoc y Documentación de parámetros de peticiones
   - [Ejemplo 1](Ejemplo-01)
   - [Reto 1](Reto-01)
 
-- Pruebas unitarias de controladores con MockMvc
+- Documentación de respuestas
   - [Ejemplo 2](Ejemplo-02)
   - [Reto 2](Reto-02)
 
--  Pruebas integrales con TestRestTemplate
+- Personalizaciones a la documentación
     - [Ejemplo 3](Ejemplo-03)
