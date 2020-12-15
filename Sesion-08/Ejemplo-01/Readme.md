@@ -53,16 +53,11 @@ public class ClienteController {
 }
 ```
 
-8. Coloca dos métodos dentro de esta clase, uno que regresará un `Cliente` y otro que creará un `Cliente` nuevo. Para simplificar el ejemplo simila su funcionamiento.
+8. Coloca un método dentro de esta clase que regresará un `Cliente`.
 ```java
     @GetMapping("/{clienteId}")
     public ResponseEntity<Cliente> getCliente(@PathVariable Long clienteId){
         return ResponseEntity.ok(Cliente.builder().id(1L).correoContacto("cliente@contacto.com").nombre("Nombre").build());
-    }
-
-    @PostMapping
-    public ResponseEntity<Void> creaCliente(@Validated @RequestBody Cliente cliente){
-        return ResponseEntity.created(URI.create("1")).build();
     }
 ```
 
