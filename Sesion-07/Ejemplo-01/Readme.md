@@ -2,7 +2,7 @@
 
 ### Objetivo
 
-- Crear una prueba que ayude a vaiar el correcto funcionamiento de una clase o componente.
+- Crear una prueba que ayude a validar el correcto funcionamiento de una clase o componente.
 - Simular el funcionamiento de una clase que aún no existe, usando un mock creado con Mockito.  
 
 
