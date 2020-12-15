@@ -11,9 +11,9 @@
   - [Ejemplo 1](Ejemplo-01)
   - [Reto 1](Reto-01)
 
-- Documentación de respuestas
+- Documentación de respuestas y personalizaciones a la documentación
   - [Ejemplo 2](Ejemplo-02)
   - [Reto 2](Reto-02)
 
-- Personalizaciones a la documentación
+- Distribución de la documentación dentro de la aplicación
     - [Ejemplo 3](Ejemplo-03)
