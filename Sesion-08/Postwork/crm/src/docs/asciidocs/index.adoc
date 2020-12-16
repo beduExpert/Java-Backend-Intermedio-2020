@@ -77,6 +77,19 @@ include::{snippets}/cliente/get-cliente/curl-request.adoc[]
 include::{snippets}/cliente/get-cliente/path-parameters.adoc[]
 
 
+=== Get clientes
+Obtiene todos los clientes.
+
+==== Ejemplo de petición
+include::{snippets}/cliente/get-clientes/http-request.adoc[]
+
+==== Ejemplo de respuesta
+include::{snippets}/cliente/get-clientes/http-response.adoc[]
+
+==== Ejemplo usando CURL
+include::{snippets}/cliente/get-clientes/curl-request.adoc[]
+
+
 
 === POST nuevo cliente
 Crea un nuevo cliente
@@ -89,3 +102,41 @@ include::{snippets}/cliente/post-cliente/http-response.adoc[]
 
 ==== Ejemplo usando CURL
 include::{snippets}/cliente/post-cliente/curl-request.adoc[]
+
+
+
+
+=== PUT  cliente
+Actualiza un cliente existente.
+
+==== Ejemplo de petición
+include::{snippets}/cliente/put-cliente/http-request.adoc[]
+
+==== Parámetros de la petición
+include::{snippets}/cliente/put-cliente/path-parameters.adoc[]
+
+==== Ejemplo de respuesta
+include::{snippets}/cliente/put-cliente/http-response.adoc[]
+
+==== Ejemplo usando CURL
+include::{snippets}/cliente/put-cliente/curl-request.adoc[]
+
+
+
+
+
+
+=== DELETE cliente por Id
+Elimina un cliente específico usando su identificador único.
+
+==== Ejemplo de petición
+include::{snippets}/cliente/delete-cliente/http-request.adoc[]
+
+==== Ejemplo de respuesta
+include::{snippets}/cliente/delete-cliente/http-response.adoc[]
+
+==== Parámetros de la petición
+include::{snippets}/cliente/delete-cliente/path-parameters.adoc[]
+
+==== Ejemplo usando CURL
+include::{snippets}/cliente/delete-cliente/curl-request.adoc[]
