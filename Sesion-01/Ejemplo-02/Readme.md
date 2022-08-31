@@ -17,7 +17,7 @@
   - Versión de Spring Boot, la versión estable más reciente (al momento de escribir esto la **2.3.5**)
   - Grupo, artefacto y nombre del proyecto.
   - Forma de empaquetar la aplicación: **jar**.
-  - Versión de Java: **11**.
+  - **Versión de Java: 11**.
 
 ![imagen](img/img_01.png)
 

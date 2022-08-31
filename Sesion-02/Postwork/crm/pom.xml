@@ -15,7 +15,9 @@
     <description>Mini CRM usado como proyecto para el curso Java Backend</description>
 
     <properties>
+
         <java.version>11</java.version>
+        
     </properties>
 
     <dependencies>

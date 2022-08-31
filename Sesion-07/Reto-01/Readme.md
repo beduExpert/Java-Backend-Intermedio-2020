@@ -33,7 +33,7 @@ public int suma(int a, int b, int c) {
 - Tipo de proyecto: **Maven Project**.
 - Lenguaje: **Java**.
 - Forma de empaquetar la aplicación: **jar**.
-- Versión de Java: **11**.
+- **Versión de Java: 11**.
 
 3. En la siguiente ventana elige **Lombok** como dependencia del proyecto. En automático se agregarán también las dependencias para realizar pruebas unitarias.
 

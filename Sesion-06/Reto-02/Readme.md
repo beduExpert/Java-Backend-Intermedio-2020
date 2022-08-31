@@ -35,7 +35,7 @@
 - Tipo de proyecto: **Maven Project**.
 - Lenguaje: **Java**.
 - Forma de empaquetar la aplicación: **jar**.
-- Versión de Java: **11**.
+- **Versión de Java: 11**.
 
 3. En la siguiente ventana elige **Spring Web**, **Lombok**, **Spring Data JPA** y **MySQL Driver** como dependencia del proyecto.
 

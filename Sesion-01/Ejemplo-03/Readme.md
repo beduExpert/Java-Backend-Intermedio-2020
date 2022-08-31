@@ -25,7 +25,7 @@
 - Tipo de proyecto: **Maven Proyect**.
 - Lenguaje: **Java**.
 - Forma de empaquetar la aplicación: **jar**.
-- Versión de Java: **11**.
+- **Versión de Java: 11**.
 
 ![imagen](img/img_03.png)
 

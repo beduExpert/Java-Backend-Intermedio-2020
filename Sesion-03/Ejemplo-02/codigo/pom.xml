@@ -15,7 +15,9 @@
     <description>Ejemplo 2 de la sesión 3</description>
 
     <properties>
+
         <java.version>11</java.version>
+        
     </properties>
 
     <dependencies>

@@ -4,6 +4,8 @@
 ### Objetivo
 Adquirir los conocimientos necesarios para el desarrollo del motor de aplicaciones web usando el Framework de Spring 5 y su módulo **Spring Boot**, aprendiendo la forma de estructurar una aplicación para agregar funcionalidades de acceso a datos. 
 
+Para este módulo se usara la versión 11 de Java. Por lo que es importante agregar el JDK correspondiente en el IDE que vayas a utilizar, de preferencia IntelliJ.
+
 
 
 ### Organización Del Módulo

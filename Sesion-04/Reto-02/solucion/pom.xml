@@ -15,7 +15,9 @@
     <description>Reto 2 de la Sesión 4 del curso de Java Backend en Bedu</description>
 
     <properties>
+
         <java.version>11</java.version>
+        
     </properties>
 
     <dependencies>

@@ -15,7 +15,9 @@
     <description>Ejemplo 1 de la sesión 6 del curso de Java Backend en Bedu</description>
 
     <properties>
+
         <java.version>11</java.version>
+        
     </properties>
 
     <dependencies>

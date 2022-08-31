@@ -18,7 +18,7 @@
 - Tipo de proyecto: **Maven Project**.
 - Lenguaje: **Java**.
 - Forma de empaquetar la aplicación: **jar**.
-- Versión de Java: **11**.
+- **Versión de Java: 11**.
 
 3. En la siguiente ventana elige **Spring Web**, **Spring Rest Docs**, y **Lombok** como dependencias del proyecto. En automático se agregarán también las dependencias para realizar pruebas unitarias.
 

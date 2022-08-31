@@ -32,7 +32,7 @@ Crear un proyecto de Spring Boot usando Spring Initializr con las siguientes car
 - Tipo de proyecto: **Maven**.
 - Lenguaje: **Java**.
 - Forma de empaquetar la aplicación: **jar**.
-- Versión de Java: **11**.
+- **Versión de Java: 11**.
 
 ![imagen](img/img_03.png)
 
